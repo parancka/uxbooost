@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The future of Gold is Digital</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.js"></script>
+    <script src="js/global.js"></script>
+</head>
+<body>
+<header>
+    <div class="wrapper container-fluid">
+        <div class="row middle-xs">
+            <div class="col-xs-6">
+                <img src="img/logo.png" alt="Novem Gold" width="36"  height="36" class="mobile-visible">
+            </div>
+            <div class="col-xs-6">
+                <div class="lang_selection">
+                    <div class="selectTagWrapper prefix-icon-arrow-down-fill">
+                        <select>
+                            <option value="en">ENGLISH</option>
+                            <option value="de">DEUTSCH</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="top">
+            <div class="logo desktop-visible">
+                <img src="img/logo.png" alt="Novem Gold" width="96">
+            </div>
+            <h1 id="title">The future of Gold is Digital</h1>
+            <h3 id="subtitle">Investment grade gold secured on the blockchain, moveable borderless, buy the NNN Token!</h3>
+        </div>
+    </div>
+    <div class="first-featured">
+        <div class="wrapper container-fluid">
+            <p>100 NNN = 1gr of gold 99,99 certified by London bullion Exchange, readimable at any time</p>
+        </div>
+    </div>
+</header>
+<section id="converter">
+    <div class="wrapper container-fluid">
+        <h2>Buy NNN tokens</h2>
+        <p>We create a world where 99.99% fine gold are made divisible transferable and redeemable. Buy pure Gold with your crypto now! Also, trade your Gold instantly and borderless!</p>
+        <div class="top-wr">
+            <div class="header-wr">
+                <div class="quotes">
+                    <form>
+                        <div class="row center-xs  end-sm start-lg">
+                            <img src="img/novem-gold.png" width="60" class="logo-gold">
+                        </div>
+                        <div class="row middle-xs around-xs">
+                            <div class="col-md col-xs-12">
+                                <select>
+                                    <option value="BTC">BTC</option>
+                                    <option value="ETH">ETH</option>
+                                    <option value="NEO">NEO</option>
+                                    <option value="GAS">GAS</option>
+                                    <option value="EUR">EUR</option>
+                                </select>
+                                <input type="text" id="valute">
+                            </div>
+                            <div class="col-md-1 col-xs-12 arrows" ><svg width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.65 23.6665L0 16.9998L6.65 10.3332V15.3332L18.3333 15.3332V18.6665H6.65V23.6665ZM11.6667 5.33317H23.35V0.333172L30 6.99984L23.35 13.6665V8.6665L11.6667 8.6665V5.33317Z" fill="#C5A861"/>
+                            </svg>
+                            </div>
+                            <div class="col-md col-xs-12 rel">
+                                <input id="nnn" name="nnn" type="text">
+                                <label for="nnn">NNN</label>
+                            </div>
+                        </div>
+                        <div class="emailform">
+                            <p>Your email address</p>
+                            <input type="email" id="email" placeholder="Type your email address and  buy the NNN tokens">
+                            <input type="submit" name="commit" value="Buy the NNN tokens"  id="submit">
+
+                        </div>
+                    </form>
+
+                </div>
+                <span>A transaction fee of 0.05% will be automatically taken on transferal. The final price is fixed at the point of transaction.</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="bg" id="second-featured">
+    <div class="wrapper container-fluid">
+        <div class="row">
+            <div class="col-md-7 col-xs-12">
+                <h3><span class="gold">Novem Gold</span> <br /> A better way to buy <span class="gold">gold</span></h3>
+                <p>By combining traditional gold stores with highly secure digital tokens
+                    that are backed by physical gold, Novem Gold is changing how gold is
+                    bought, sold, and stored throughout the world. </p>
+            </div>
+            <div class="col-md-5  col-xs-12">
+                <div class="videoWrapper">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EsPcwlC-HSA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section  id="third-featured">
+    <div class="wrapper container-fluid">
+        <h3>Benefits</h3>
+        <p>Buying our gold-backed tokens has some <b>significant benefits</b> over buying physical gold. <br /> This is why we consider Novem Gold tokens <b>the smartest way to buy gold</b> nowadays.</p>
+
+        <div class="row information">
+            <div class="col-md-4">
+                <div class="infograf">
+                    <svg width="80" height="80" viewBox="0 0 82 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="41" cy="41" r="40" stroke="#C5A861" stroke-width="2"/>
+                        <circle cx="41" cy="41" r="40" fill="white"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M52.0072 23.385L45.0072 9.38501L38.0072 23.384H44.0072V53.938H46.0072V23.384L52.0072 23.385ZM38.9922 60.094L38.9932 29.541H36.9932L36.9922 60.094H30.9932L37.9932 74.094L44.9932 60.094H38.9922Z" fill="#C5A861"/>
+                        <rect x="19" y="34" width="45" height="15" rx="2" fill="white"/>
+                        <rect x="43" y="48" width="4" height="6" fill="white"/>
+                        <rect x="36" y="28" width="4" height="6" fill="white"/>
+                        <path d="M17.588 42.06V40.884H20.92V42.06H17.588ZM24.9277 40.436C25.1891 40.436 25.4597 40.3567 25.7397 40.198C26.0291 40.03 26.2904 39.764 26.5237 39.4C26.4397 38.616 26.2437 38.0467 25.9357 37.692C25.6371 37.3373 25.2731 37.16 24.8437 37.16C24.4797 37.16 24.1671 37.3047 23.9057 37.594C23.6444 37.8833 23.5137 38.2987 23.5137 38.84C23.5137 39.372 23.6351 39.7733 23.8777 40.044C24.1297 40.3053 24.4797 40.436 24.9277 40.436ZM24.5497 45.168C24.0177 45.168 23.5557 45.07 23.1637 44.874C22.7717 44.678 22.4404 44.44 22.1697 44.16L23.0377 43.18C23.2057 43.376 23.4157 43.5393 23.6677 43.67C23.9291 43.7913 24.1951 43.852 24.4657 43.852C24.7457 43.852 25.0071 43.796 25.2497 43.684C25.5017 43.572 25.7211 43.39 25.9077 43.138C26.0944 42.8767 26.2437 42.536 26.3557 42.116C26.4771 41.696 26.5471 41.178 26.5657 40.562C26.3044 40.8887 25.9964 41.1453 25.6417 41.332C25.2871 41.5093 24.9464 41.598 24.6197 41.598C24.2371 41.598 23.8871 41.542 23.5697 41.43C23.2524 41.318 22.9771 41.15 22.7437 40.926C22.5197 40.6927 22.3424 40.4033 22.2117 40.058C22.0904 39.7127 22.0297 39.3067 22.0297 38.84C22.0297 38.392 22.1044 37.9907 22.2537 37.636C22.4031 37.272 22.6037 36.964 22.8557 36.712C23.1077 36.46 23.4017 36.2687 23.7377 36.138C24.0831 35.998 24.4471 35.928 24.8297 35.928C25.2591 35.928 25.6697 36.0167 26.0617 36.194C26.4537 36.362 26.7944 36.6233 27.0837 36.978C27.3824 37.3327 27.6157 37.7853 27.7837 38.336C27.9611 38.8773 28.0497 39.5213 28.0497 40.268C28.0497 41.136 27.9517 41.878 27.7557 42.494C27.5691 43.11 27.3124 43.6187 26.9857 44.02C26.6684 44.412 26.2951 44.7013 25.8657 44.888C25.4457 45.0747 25.0071 45.168 24.5497 45.168ZM32.1055 40.436C32.3668 40.436 32.6375 40.3567 32.9175 40.198C33.2068 40.03 33.4681 39.764 33.7015 39.4C33.6175 38.616 33.4215 38.0467 33.1135 37.692C32.8148 37.3373 32.4508 37.16 32.0215 37.16C31.6575 37.16 31.3448 37.3047 31.0835 37.594C30.8221 37.8833 30.6915 38.2987 30.6915 38.84C30.6915 39.372 30.8128 39.7733 31.0555 40.044C31.3075 40.3053 31.6575 40.436 32.1055 40.436ZM31.7275 45.168C31.1955 45.168 30.7335 45.07 30.3415 44.874C29.9495 44.678 29.6181 44.44 29.3475 44.16L30.2155 43.18C30.3835 43.376 30.5935 43.5393 30.8455 43.67C31.1068 43.7913 31.3728 43.852 31.6435 43.852C31.9235 43.852 32.1848 43.796 32.4275 43.684C32.6795 43.572 32.8988 43.39 33.0855 43.138C33.2721 42.8767 33.4215 42.536 33.5335 42.116C33.6548 41.696 33.7248 41.178 33.7435 40.562C33.4821 40.8887 33.1741 41.1453 32.8195 41.332C32.4648 41.5093 32.1241 41.598 31.7975 41.598C31.4148 41.598 31.0648 41.542 30.7475 41.43C30.4301 41.318 30.1548 41.15 29.9215 40.926C29.6975 40.6927 29.5201 40.4033 29.3895 40.058C29.2681 39.7127 29.2075 39.3067 29.2075 38.84C29.2075 38.392 29.2821 37.9907 29.4315 37.636C29.5808 37.272 29.7815 36.964 30.0335 36.712C30.2855 36.46 30.5795 36.2687 30.9155 36.138C31.2608 35.998 31.6248 35.928 32.0075 35.928C32.4368 35.928 32.8475 36.0167 33.2395 36.194C33.6315 36.362 33.9721 36.6233 34.2615 36.978C34.5601 37.3327 34.7935 37.7853 34.9615 38.336C35.1388 38.8773 35.2275 39.5213 35.2275 40.268C35.2275 41.136 35.1295 41.878 34.9335 42.494C34.7468 43.11 34.4901 43.6187 34.1635 44.02C33.8461 44.412 33.4728 44.7013 33.0435 44.888C32.6235 45.0747 32.1848 45.168 31.7275 45.168ZM37.7992 45.168C37.5005 45.168 37.2485 45.0653 37.0432 44.86C36.8472 44.6547 36.7492 44.3933 36.7492 44.076C36.7492 43.7587 36.8472 43.4973 37.0432 43.292C37.2485 43.0867 37.5005 42.984 37.7992 42.984C38.0979 42.984 38.3452 43.0867 38.5412 43.292C38.7372 43.4973 38.8352 43.7587 38.8352 44.076C38.8352 44.3933 38.7372 44.6547 38.5412 44.86C38.3452 45.0653 38.0979 45.168 37.7992 45.168ZM43.1387 40.436C43.4 40.436 43.6707 40.3567 43.9507 40.198C44.24 40.03 44.5013 39.764 44.7347 39.4C44.6507 38.616 44.4547 38.0467 44.1467 37.692C43.848 37.3373 43.484 37.16 43.0547 37.16C42.6907 37.16 42.378 37.3047 42.1167 37.594C41.8553 37.8833 41.7247 38.2987 41.7247 38.84C41.7247 39.372 41.846 39.7733 42.0887 40.044C42.3407 40.3053 42.6907 40.436 43.1387 40.436ZM42.7607 45.168C42.2287 45.168 41.7667 45.07 41.3747 44.874C40.9827 44.678 40.6513 44.44 40.3807 44.16L41.2487 43.18C41.4167 43.376 41.6267 43.5393 41.8787 43.67C42.14 43.7913 42.406 43.852 42.6767 43.852C42.9567 43.852 43.218 43.796 43.4607 43.684C43.7127 43.572 43.932 43.39 44.1187 43.138C44.3053 42.8767 44.4547 42.536 44.5667 42.116C44.688 41.696 44.758 41.178 44.7767 40.562C44.5153 40.8887 44.2073 41.1453 43.8527 41.332C43.498 41.5093 43.1573 41.598 42.8307 41.598C42.448 41.598 42.098 41.542 41.7807 41.43C41.4633 41.318 41.188 41.15 40.9547 40.926C40.7307 40.6927 40.5533 40.4033 40.4227 40.058C40.3013 39.7127 40.2407 39.3067 40.2407 38.84C40.2407 38.392 40.3153 37.9907 40.4647 37.636C40.614 37.272 40.8147 36.964 41.0667 36.712C41.3187 36.46 41.6127 36.2687 41.9487 36.138C42.294 35.998 42.658 35.928 43.0407 35.928C43.47 35.928 43.8807 36.0167 44.2727 36.194C44.6647 36.362 45.0053 36.6233 45.2947 36.978C45.5933 37.3327 45.8267 37.7853 45.9947 38.336C46.172 38.8773 46.2607 39.5213 46.2607 40.268C46.2607 41.136 46.1627 41.878 45.9667 42.494C45.78 43.11 45.5233 43.6187 45.1967 44.02C44.8793 44.412 44.506 44.7013 44.0767 44.888C43.6567 45.0747 43.218 45.168 42.7607 45.168ZM50.2744 45.168C49.5557 45.168 48.9491 45.0467 48.4544 44.804C47.9691 44.552 47.5631 44.2627 47.2364 43.936L47.9784 42.9C48.2491 43.152 48.5524 43.376 48.8884 43.572C49.2244 43.7587 49.6164 43.852 50.0644 43.852C50.5684 43.852 50.9791 43.7027 51.2964 43.404C51.6231 43.1053 51.7864 42.6853 51.7864 42.144C51.7864 41.612 51.6371 41.2013 51.3384 40.912C51.0397 40.6227 50.6431 40.478 50.1484 40.478C49.8591 40.478 49.6164 40.52 49.4204 40.604C49.2244 40.6787 48.9911 40.8047 48.7204 40.982L47.9504 40.492L48.2164 36.096H52.9764V37.454H49.6164L49.4344 39.61C49.6211 39.5167 49.8031 39.4467 49.9804 39.4C50.1671 39.344 50.3771 39.316 50.6104 39.316C50.9931 39.316 51.3524 39.372 51.6884 39.484C52.0337 39.596 52.3324 39.7687 52.5844 40.002C52.8364 40.226 53.0371 40.5153 53.1864 40.87C53.3357 41.2153 53.4104 41.626 53.4104 42.102C53.4104 42.5873 53.3217 43.0213 53.1444 43.404C52.9764 43.7867 52.7477 44.1087 52.4584 44.37C52.1691 44.6313 51.8331 44.832 51.4504 44.972C51.0771 45.1027 50.6851 45.168 50.2744 45.168ZM56.6821 41.472C56.0381 41.472 55.5108 41.22 55.1001 40.716C54.6988 40.2027 54.4981 39.484 54.4981 38.56C54.4981 37.636 54.6988 36.9267 55.1001 36.432C55.5108 35.928 56.0381 35.676 56.6821 35.676C57.3261 35.676 57.8488 35.928 58.2501 36.432C58.6608 36.9267 58.8661 37.636 58.8661 38.56C58.8661 39.484 58.6608 40.2027 58.2501 40.716C57.8488 41.22 57.3261 41.472 56.6821 41.472ZM56.6821 40.534C56.9808 40.534 57.2235 40.38 57.4101 40.072C57.6061 39.7547 57.7041 39.2507 57.7041 38.56C57.7041 37.8693 57.6061 37.3747 57.4101 37.076C57.2235 36.768 56.9808 36.614 56.6821 36.614C56.3835 36.614 56.1361 36.768 55.9401 37.076C55.7535 37.3747 55.6601 37.8693 55.6601 38.56C55.6601 39.2507 55.7535 39.7547 55.9401 40.072C56.1361 40.38 56.3835 40.534 56.6821 40.534ZM56.9621 45.168L61.9601 35.676H62.9401L57.9561 45.168H56.9621ZM63.2481 45.168C62.6041 45.168 62.0768 44.916 61.6661 44.412C61.2648 43.8987 61.0641 43.18 61.0641 42.256C61.0641 41.332 61.2648 40.6227 61.6661 40.128C62.0768 39.624 62.6041 39.372 63.2481 39.372C63.8921 39.372 64.4148 39.624 64.8161 40.128C65.2268 40.6227 65.4321 41.332 65.4321 42.256C65.4321 43.18 65.2268 43.8987 64.8161 44.412C64.4148 44.916 63.8921 45.168 63.2481 45.168ZM63.2481 44.23C63.5468 44.23 63.7895 44.076 63.9761 43.768C64.1721 43.4507 64.2701 42.9467 64.2701 42.256C64.2701 41.5653 64.1721 41.0707 63.9761 40.772C63.7895 40.464 63.5468 40.31 63.2481 40.31C62.9495 40.31 62.7021 40.464 62.5061 40.772C62.3195 41.0707 62.2261 41.5653 62.2261 42.256C62.2261 42.9467 62.3195 43.4507 62.5061 43.768C62.7021 44.076 62.9495 44.23 63.2481 44.23Z" fill="#C5A861"/>
+                    </svg>
+                </div>
+                <div class="text">
+                    <h4>Save more than 90% of fees</h4>
+                    <p>Traditional gold traders charge fees up to 20%. Buying NNN will only charge transfer fees of 0.05% maximum.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="infograf">
+                    <svg width="80" height="80" viewBox="0 0 82 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="41" cy="41" r="40" stroke="#C5A861" stroke-width="2"/>
+                        <circle cx="41" cy="41" r="40" fill="white"/>
+                        <circle cx="41" cy="41" r="24" stroke="#C5A861" stroke-width="2"/>
+                        <ellipse cx="41" cy="41" rx="8" ry="24" stroke="#C5A861" stroke-width="2"/>
+                        <ellipse cx="41" cy="41" rx="8" ry="24" transform="rotate(90 41 41)" stroke="#C5A861" stroke-width="2"/>
+                        <ellipse cx="41" cy="41" rx="17" ry="24" stroke="#C5A861" stroke-width="2"/>
+                        <ellipse cx="41" cy="41" rx="17" ry="24" transform="rotate(90 41 41)" stroke="#C5A861" stroke-width="2"/>
+                    </svg>
+
+                </div>
+                <div class="text">
+                    <h4>Trade with the whole world</h4>
+                    <p>NNN enables you to buy from and  sell to the whole gold market, not just your local gold dealer.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="infograf">
+                    <svg width="80" height="80" viewBox="0 0 82 82" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <circle cx="41" cy="41" r="40" stroke="#C5A861" stroke-width="2"/>
+                        <circle cx="41" cy="41" r="40" fill="white"/>
+                        <rect x="12" y="3" width="60" height="57" fill="url(#pattern0)"/>
+                        <defs>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0" transform="scale(0.0166667 0.0175439)"/>
+                            </pattern>
+                            <image id="image0" width="60" height="57" xlink:href="data:image/png;base64,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"/>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="text">
+                    <h4>Move your gold borderless and instantly</h4>
+                    <p>NNN allows you to move your gold everywhere in a matter of minutes and a low cost</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="infograf">
+                    <svg width="80" height="80" viewBox="0 0 82 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="41" cy="41" r="40" stroke="#C5A861" stroke-width="2"/>
+                        <circle cx="41" cy="41" r="40" fill="white"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M49.0188 24.527L50.9998 9L37.3898 16.732L42.3148 20.033L33.9138 30.994L29.7908 26.549L16.5908 42.117L18.1158 43.41L29.8578 29.561L34.0598 34.091L43.9788 21.148L49.0188 24.527ZM37.6968 51.82H35.5148V51.819C34.5448 51.819 33.7578 52.371 33.7578 53.045V53.168C33.7578 53.29 33.8788 53.597 34.6058 53.965L38.1208 54.639L38.9698 54.823L39.1518 54.884L39.2728 54.945C41.0908 55.865 41.4548 56.906 41.4548 57.642V57.765C41.4548 59.603 39.8178 61.013 37.7568 61.075V62.545H35.6968V61.075H35.4548C33.3938 61.075 31.6968 59.603 31.6968 57.765V57.029H33.7578V57.765C33.7578 58.439 34.6058 58.99 35.5148 58.99H37.7578C38.6668 58.99 39.4548 58.439 39.4548 57.765V57.642C39.4548 57.581 39.2728 57.275 38.5448 56.845L35.0298 56.171L34.2418 55.987L33.9998 55.925L33.8778 55.865C32.4848 55.129 31.7578 54.21 31.7578 53.168V53.045C31.7578 51.206 33.4548 49.735 35.5148 49.735H35.7578V48.387H37.8178V49.735C39.8788 49.797 41.5148 51.268 41.5148 53.045H39.4548C39.4548 52.371 38.6068 51.82 37.6968 51.82Z" fill="#C5A861"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M37.5147 38.5191C37.5147 37.9671 37.9997 37.4771 38.5447 37.4771H41.4537V31.2871C41.4537 30.7351 41.9377 30.2451 42.4837 30.2451H61.9397C62.4847 30.2451 62.9697 30.7351 62.9697 31.2881V38.4581C62.9697 39.0101 62.4847 39.5001 61.9397 39.5001H59.0297V44.7101H60.7877C61.3327 44.7101 61.8177 45.2001 61.8177 45.7521V52.0031H62.7267C63.2727 52.0031 63.7567 52.4941 63.7567 53.0451V60.2771C63.7567 60.8291 63.2727 61.3191 62.7267 61.3191H47.5157C45.4547 65.2421 41.3327 67.9391 36.6057 67.9391C29.8177 67.9391 24.2417 62.3001 24.2417 55.4351C24.2417 48.5711 29.7577 42.9321 36.6057 42.9321C36.7572 42.9321 36.9087 42.9476 37.0602 42.9631L37.0602 42.9631C37.2117 42.9786 37.3632 42.9941 37.5147 42.9941V38.5191ZM51.5147 37.4771H57.7577V32.2671H51.5147V37.4771ZM46.1197 47.4681V46.7941H47.6957V50.0421C47.2717 49.1221 46.7257 48.2651 46.1197 47.4681ZM57.9377 59.2971V54.0871H51.6957V59.2971H57.9377ZM49.7567 52.0031V46.7931H55.9997V52.0031H49.7567ZM47.9377 39.5611V44.7711H54.1807V39.5611H47.9377ZM49.4537 37.4771H47.8777V32.2671H49.4537V37.4771ZM45.8777 44.7711V39.5611H44.3017V44.7711H45.8777ZM39.5747 39.5611H42.2407V44.3411C41.3927 43.9131 40.4837 43.5451 39.5747 43.3611V39.5611ZM26.3017 55.4961C26.3017 61.2581 30.9077 65.9161 36.6047 65.9161V65.9171C42.3017 65.9171 46.9077 61.2591 46.9077 55.4971C46.9077 49.7351 42.3017 45.0771 36.6047 45.0771C30.9077 45.0771 26.3017 49.7341 26.3017 55.4961ZM48.9107 54.0871H49.6977V59.2971H48.4247C48.7887 58.0711 49.0307 56.8451 49.0307 55.4971C48.9707 55.0071 48.9107 54.5171 48.9107 54.0871ZM59.9997 59.2351H61.7587L61.7577 54.0251H59.9997V59.2351ZM59.8187 52.0031H58.0617V46.7931H59.8187V52.0031ZM56.2427 44.7711H57.0307V39.5611H56.2427V44.7711ZM60.9107 37.4771H59.7587V32.2671H60.9097L60.9107 37.4771ZM45.8167 32.3301H43.4537V37.5401H45.8167V32.3301Z" fill="#C5A861"/>
+                    </svg>
+                </div>
+                <div class="text">
+                    <h4>Buy at market pegged price</h4>
+                    <p>The days of bargaining for a good price are over. NNN enables you to buy and sell gold at market pegged price.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="infograf">
+                    <svg width="82" height="82" viewBox="0 0 82 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="41" cy="41" r="40" stroke="#C5A861" stroke-width="2"/>
+                        <circle cx="41" cy="41" r="40" fill="white"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M28.052 48H39.8C39.815 47.995 39.88 47.933 39.855 47.828L37.751 39.084C37.737 39.023 37.701 39 37.694 39H25.027C25.017 39.001 24.983 39.025 24.969 39.084L22.866 47.828C22.841 47.933 22.906 47.995 22.921 48H28.052ZM28.834 49.698H16.167C16.16 49.698 16.124 49.72 16.109 49.781L14.006 58.525C13.98 58.631 14.046 58.693 14.06 58.698H30.94C30.955 58.693 31.02 58.631 30.994 58.525L28.891 49.781C28.877 49.723 28.843 49.699 28.834 49.698ZM35.167 49.698H47.833C47.84 49.698 47.876 49.721 47.891 49.781L49.994 58.525C50.02 58.63 49.955 58.693 49.94 58.698H33.06C33.046 58.693 32.981 58.63 33.006 58.525L35.109 49.781C35.124 49.72 35.16 49.698 35.167 49.698Z" fill="#C5A861"/>
+                        <path d="M35.5508 36.5H43.0038L43.8078 28.5H37.4238L35.5508 36.5Z" fill="#C5A861" stroke="#C5A861"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M45.8599 28H46.8599V29H45.8599V28ZM47.8599 30H48.8599V31H47.8599V30ZM48.8599 28H47.8599V29H48.8599V28Z" fill="#C5A861"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M48.8599 33V32H47.8599V31H45.8599V29H44.8599V28H43.8599V29H42.8599V37H51.8599V34H50.8599V33H51.8599V32H49.8599V33H48.8599ZM50.8599 34V36H49.8599V34H50.8599ZM46.8599 32H47.8599V33H46.8599V32ZM43.8599 30H44.8599V31H43.8599V30ZM47.8599 35H48.8599V34H47.8599V35Z" fill="#C5A861"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M49.8599 28H48.8599V29H49.8599V28ZM49.8599 30H50.8599V31H49.8599V30ZM49.8599 31V32H48.8599V31H49.8599Z" fill="#C5A861"/>
+                        <path d="M42.4912 47.5H49.9442L50.7472 39.5H44.3632L42.4912 47.5Z" fill="#C5A861" stroke="#C5A861"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M52.7998 39H53.7998V40H52.7998V39ZM54.7998 41H55.7998V42H54.7998V41ZM55.7998 39H54.7998V40H55.7998V39Z" fill="#C5A861"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M55.7998 44V43H54.7998V42H52.7998V40H51.7998V39H50.7998V40H49.7998V48H58.7998V45H57.7998V44H58.7998V43H56.7998V44H55.7998ZM57.7998 45V47H56.7998V45H57.7998ZM53.7998 43H54.7998V44H53.7998V43ZM50.7998 41H51.7998V42H50.7998V41ZM54.7998 46H55.7998V45H54.7998V46Z" fill="#C5A861"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M56.7998 39H55.7998V40H56.7998V39ZM56.7998 41H57.7998V42H56.7998V41ZM56.7998 42V43H55.7998V42H56.7998Z" fill="#C5A861"/>
+                        <path d="M52.4912 58.5H59.9442L60.7472 50.5H54.3632L52.4912 58.5Z" fill="#C5A861" stroke="#C5A861"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M62.7998 50H63.7998V51H62.7998V50ZM64.7998 52H65.7998V53H64.7998V52ZM65.7998 50H64.7998V51H65.7998V50Z" fill="#C5A861"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M65.7998 55V54H64.7998V53H62.7998V51H61.7998V50H60.7998V51H59.7998V59H68.7998V56H67.7998V55H68.7998V54H66.7998V55H65.7998ZM67.7998 56V58H66.7998V56H67.7998ZM63.7998 54H64.7998V55H63.7998V54ZM60.7998 52H61.7998V53H60.7998V52ZM64.7998 57H65.7998V56H64.7998V57Z" fill="#C5A861"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M66.7998 50H65.7998V51H66.7998V50ZM66.7998 52H67.7998V53H66.7998V52ZM66.7998 53V54H65.7998V53H66.7998Z" fill="#C5A861"/>
+                        <path d="M58.8599 47H59.8599V48H58.8599V47Z" fill="white"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M58.8599 47H59.8599V48H58.8599V47ZM58.8599 48V49H57.8599V48H58.8599ZM58.8599 50H59.8599V51H58.8599V50ZM58.8599 51V52H57.8599V51H58.8599ZM61.8599 51V50V49H60.8599V50V51H61.8599ZM61.8599 51V52H62.8599V51H61.8599ZM56.8599 55H55.8599V56H56.8599V55ZM56.8599 55V54H57.8599H58.8599V55H57.8599H56.8599ZM59.8599 52H60.8599V53H59.8599V52ZM60.8599 53H61.8599V54V55H60.8599V54V53ZM65.8599 55H66.8599V56H65.8599H64.8599V55H65.8599ZM67.8599 55H68.8599V56H67.8599V55ZM62.8599 53H63.8599V54H62.8599V53Z" fill="white"/>
+                        <path d="M23.9998 24.3334H23.3332V23.0001C23.3332 21.1601 21.8398 19.6667 19.9998 19.6667C18.1598 19.6667 16.6665 21.1601 16.6665 23.0001V24.3334H15.9998C15.2665 24.3334 14.6665 24.9334 14.6665 25.6667V32.3334C14.6665 33.0667 15.2665 33.6667 15.9998 33.6667H23.9998C24.7332 33.6667 25.3332 33.0667 25.3332 32.3334V25.6667C25.3332 24.9334 24.7332 24.3334 23.9998 24.3334ZM19.9998 30.3334C19.2665 30.3334 18.6665 29.7334 18.6665 29.0001C18.6665 28.2667 19.2665 27.6667 19.9998 27.6667C20.7332 27.6667 21.3332 28.2667 21.3332 29.0001C21.3332 29.7334 20.7332 30.3334 19.9998 30.3334ZM22.0665 24.3334H17.9332V23.0001C17.9332 21.8601 18.8598 20.9334 19.9998 20.9334C21.1398 20.9334 22.0665 21.8601 22.0665 23.0001V24.3334Z" fill="#C5A861"/>
+                    </svg>
+
+                </div>
+                <div class="text">
+                    <h4>Secure and Audited quarterly</h4>
+                    <p>Your physical Gold is stored in the safest country in Europe, Liechtenstein, and it is audited quarterly</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="infograf">
+                    <svg width="81" height="80" viewBox="0 0 81 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M79 40C79 61.5391 61.5391 79 40 79C18.4609 79 1 61.5391 1 40C1 18.4609 18.4609 1 40 1C61.5391 1 79 18.4609 79 40Z" stroke="#C5A861" stroke-width="2"/>
+                        <path d="M79.5 40C79.5 61.8153 61.8153 79.5 40 79.5C18.1848 79.5 0.5 61.8153 0.5 40C0.5 18.1848 18.1848 0.5 40 0.5C61.8153 0.5 79.5 18.1848 79.5 40Z" fill="white" stroke="#C5A861"/>
+                        <path d="M61.938 27.875H53V25.437C52.9981 23.9214 52.5257 22.4437 51.648 21.208C50.7703 19.9724 49.5305 19.0398 48.1 18.539C47.9196 17.334 47.3591 16.2181 46.5 15.354V10H44.875V15.688C44.8752 15.8025 44.8992 15.9157 44.9453 16.0205C44.9914 16.1253 45.0587 16.2195 45.143 16.297C45.6898 16.8142 46.1097 17.4508 46.37 18.157C46.455 18.409 46.498 18.672 46.5 18.937V22.187C46.5 22.497 46.439 22.803 46.321 23.089C46.186 23.439 45.969 23.751 45.688 23.999V20.563H44.062V24.625H42.438V20.562H40.812V24.625H39.188V20.562H37.562V24.625H35.938V20.562H34.312V24C34.0309 23.752 33.8138 23.4398 33.679 23.09C33.5614 22.8041 33.5006 22.4981 33.5 22.189V18.939C33.502 18.673 33.546 18.41 33.63 18.159C33.8869 17.4508 34.3073 16.8132 34.857 16.298C34.9414 16.2204 35.0088 16.1261 35.0549 16.0211C35.101 15.9161 35.1249 15.8027 35.125 15.688V10H33.5V15.354C32.6409 16.2181 32.0804 17.334 31.9 18.539C30.4695 19.0398 29.2297 19.9724 28.352 21.208C27.4743 22.4437 27.0019 23.9214 27 25.437V27.875H18.062C17.5285 27.875 17.0002 27.9801 16.5073 28.1843C16.0144 28.3885 15.5666 28.6878 15.1894 29.0651C14.8122 29.4424 14.513 29.8903 14.3089 30.3832C14.1048 30.8762 13.9999 31.4045 14 31.938V36.813C14 37.261 14.364 37.625 14.813 37.625H15.625V57.938C15.625 58.4715 15.7301 58.9998 15.9343 59.4927C16.1385 59.9856 16.4378 60.4334 16.8151 60.8106C17.1924 61.1878 17.6403 61.487 18.1332 61.6911C18.6262 61.8952 19.1545 62.0001 19.688 62H60.312C60.8456 62.0001 61.374 61.8951 61.867 61.691C62.36 61.4869 62.808 61.1876 63.1853 60.8103C63.5626 60.433 63.8618 59.985 64.066 59.492C64.2701 58.999 64.3751 58.4706 64.375 57.937V37.626H65.188C65.2947 37.626 65.4004 37.605 65.499 37.5641C65.5976 37.5232 65.6871 37.4633 65.7625 37.3878C65.8379 37.3123 65.8977 37.2227 65.9385 37.124C65.9792 37.0254 66.0001 36.9197 66 36.813V31.939C66.0001 31.4054 65.8951 30.877 65.691 30.384C65.4868 29.891 65.1876 29.443 64.8103 29.0657C64.433 28.6884 63.985 28.3891 63.492 28.185C62.999 27.9809 62.4706 27.8759 61.937 27.876L61.938 27.875ZM48.125 20.303C49.0969 20.7639 49.9181 21.4911 50.4934 22.4C51.0687 23.3089 51.3744 24.3623 51.375 25.438V27.875H49.75V25.437C49.7494 24.8064 49.6023 24.1846 49.3203 23.6206C49.0383 23.0566 48.6291 22.5658 48.125 22.187V20.303ZM32.322 24.032C32.6609 24.6995 33.1781 25.2601 33.8162 25.6516C34.4543 26.0431 35.1884 26.2502 35.937 26.25H44.063C44.8116 26.2502 45.5457 26.0431 46.1838 25.6516C46.8219 25.2601 47.3391 24.6995 47.678 24.032C47.967 24.444 48.123 24.934 48.125 25.438V27.875H31.875V25.438C31.877 24.934 32.033 24.444 32.322 24.032ZM28.625 25.438C28.6256 24.3623 28.9313 23.3089 29.5066 22.4C30.0819 21.4911 30.9031 20.7639 31.875 20.303V22.188C31.3709 22.5668 30.9617 23.0576 30.6797 23.6216C30.3977 24.1856 30.2506 24.8074 30.25 25.438V27.875H28.625V25.438ZM62.75 57.938C62.7479 58.5839 62.4903 59.2026 62.0335 59.6592C61.5767 60.1158 60.9579 60.3732 60.312 60.375H19.688C19.042 60.3732 18.4229 60.1157 17.9661 59.6589C17.5093 59.2021 17.2518 58.583 17.25 57.937V37.626H62.75V57.938ZM64.375 36H15.625V31.937C15.6271 31.2911 15.8847 30.6724 16.3415 30.2158C16.7983 29.7592 17.4171 29.5018 18.063 29.5H61.937C62.583 29.5018 63.2021 29.7593 63.6589 30.2161C64.1157 30.6729 64.3732 31.292 64.375 31.938V36Z" fill="#C5A861"/>
+                        <path d="M36.2758 48H45.9498C45.9628 47.996 46.0158 47.948 45.9948 47.866L44.2628 41.065C44.2508 41.018 44.2208 41 44.2158 41H33.7838C33.7768 41.001 33.7478 41.02 33.7368 41.065L32.0048 47.866C31.9838 47.948 32.0368 47.996 32.0498 48H36.2758ZM37.2158 50H26.7838C26.7788 50 26.7488 50.018 26.7368 50.065L25.0048 56.866C24.9838 56.948 25.0378 56.996 25.0498 57H38.9498C38.9618 56.996 39.0148 56.948 38.9938 56.866L37.2618 50.065C37.2508 50.02 37.2218 50.001 37.2148 50H37.2158ZM53.2158 50H42.7838C42.7788 50 42.7488 50.018 42.7368 50.065L41.0048 56.866C40.9838 56.947 41.0368 56.996 41.0498 57H54.9498C54.9628 56.996 55.0158 56.947 54.9948 56.866L53.2628 50.065C53.2508 50.018 53.2208 50 53.2158 50Z" fill="#C5A861"/>
+                    </svg>
+                </div>
+                <div class="text">
+                    <h4>Redeem your gold at any time</h4>
+                    <p>As the only owner of your gold, you can redeem your gold at any time.</p>
+                </div>
+            </div>
+        </div>
+        <button>Invest in digital gold</button>
+    </div>
+</section>
+<section  id="fourth-featured">
+    <div class="wrapper container-fluid">
+        <div class="intro">
+            <h3>There are challenges to buying gold in today’s market</h3>
+            <p>Every solution in today’s market, even those on the blockchain, have hurdles and barriers. Novem Gold has the only solution that democratizes access to gold, while providing the highest level of security, safety, and ease-of-access to every user</p>
+        </div>
+
+        <div id="comparison">
+            <table class="desktop-visible">
+
+                <colgroup></colgroup>
+                <colgroup></colgroup>
+                <colgroup></colgroup>
+                <colgroup></colgroup>
+                <colgroup></colgroup>
+                <colgroup></colgroup>
+
+                <thead>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>
+                        <h2>PHYSICAL GOLD</h2>
+                    </th>
+                    <th>
+                        <h2>GOLD FUTURES</h2>
+                    </th>
+                    <th>
+                        <h2>NOVEM GOLD</h2>
+                        <img src="img/novem-gold.png" class="novem-gold" width="60">
+                    </th>
+                    <th>
+                        <h2>ETF GOLD</h2>
+                    </th>
+                    <th>
+                        <h2>ETF GOLD</h2>
+                    </th>
+                </tr>
+                </thead>
+
+
+
+                <tbody>
+                <tr>
+                    <th>Accessibility</th>
+                    <td><span class="yes">YES</span></td>
+                    <td>NO</td>
+                    <td><span class="yes">YES</span> <span>Take delivery</span></td>
+                    <td>NO</td>
+                    <td>NO</td>
+                </tr>
+                <tr>
+                    <th>Market Price</th>
+                    <td><span class="yes">YES</span> <span>with fees</span></td>
+                    <td>Depends <span>Markets fluctuate valuated 1day</span></td>
+                    <td>Always</td>
+                    <td>Depends <span>More than gold futures</span></td>
+                    <td>NO <span>Operating cost</span></td>
+                </tr>
+                <tr>
+                    <th>Third party verifications</th>
+                    <td><span class="yes">YES</span> <span>By seller</span></td>
+                    <td>NO</td>
+                    <td>Regular audits</td>
+                    <td>NO</td>
+                    <td>NO</td>
+                </tr>
+                <tr>
+                    <th>Fungibility</th>
+                    <td>NO <span>Limited</span></td>
+                    <td><span class="yes">YES</span></td>
+                    <td>Simple to trade</td>
+                    <td><span class="yes">YES</span></td>
+                    <td><span class="yes">YES</span></td>
+                </tr>
+
+
+                </tbody>
+
+            </table>
+
+
+
+            <div id="menu-comparations"  class="mobile-visible">
+                <h4>COMPARE OPTIONS</h4>
+                <ul class="mainmenu">
+                    <li class="close"><a href="#">Accessibility</a>
+                        <ul class="submenu">
+                            <li><span>PHYSICAL GOLD</span> <span class="right">YES</span></li>
+                            <li><span>GOLD FUTURES</span> <span class="right">NO</span></li>
+                            <li class="novem"><span class="gold">NOVEM GOLD</span> <span class="right">YES <br> Take delivery</span></li>
+                            <li><span>ETF GOLD</span> <span class="right">NO</span></li>
+                            <li><span>GOLD MINING</span> <span class="right">NO</span></li>
+
+                        </ul>
+                    </li>
+                    <li class="close"><a href="#">Market Price</a>
+                        <ul class="submenu">
+                            <li><span>PHYSICAL GOLD</span> <span class="right">YES <br /> with fees</span></li>
+                            <li><span>GOLD FUTURES</span> <span class="right">Depends Markets <br>fluctuate valuated 1day</span></li>
+                            <li class="novem"><span class="gold">NOVEM GOLD</span> <span class="right">Always</span></li>
+                            <li><span>ETF GOLD</span> <span class="right">Depends More <br>than gold futures</span></li>
+                            <li><span>GOLD MINING</span> <span class="right">NO Operating cost</span></li>
+
+                        </ul>
+                    </li>
+                    <li class="close"><a href="#">Third party verifications</a>
+                        <ul class="submenu">
+                            <li><span>PHYSICAL GOLD</span> <span class="right">YES  <br />By seller</span></li>
+                            <li><span>GOLD FUTURES</span> <span class="right">NO</span></li>
+                            <li class="novem"><span class="gold">NOVEM GOLD</span> <span class="right">Regular audits</span></li>
+                            <li><span>ETF GOLD</span> <span class="right">NO</span></li>
+                            <li><span>GOLD MINING</span> <span class="right">NO</span></li>
+
+                        </ul>
+                    </li>
+                    <li class="close"><a href="#">Fungibility</a>
+                        <ul class="submenu">
+                            <li><span>PHYSICAL GOLD</span> <span class="right">NO Limited</span></li>
+                            <li><span>GOLD FUTURES</span> <span class="right">YES</span></li>
+                            <li class="novem"><span class="gold">NOVEM GOLD</span> <span class="right">Simple to trade</span></li>
+                            <li><span>ETF GOLD</span> <span class="right">YES</span></li>
+                            <li><span>GOLD MINING</span> <span class="right">YES</span></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+
+
+        <button>Invest in digital gold</button>
+    </div>
+</section>
+<section id="fifth-featured">
+    <div class="wrapper container-fluid">
+        <div class="row">
+            <div class="col-md-7 col-xs-12">
+                <h3>How we keep your gold safe</h3>
+                <h4>Storage</h4>
+                <p>We have spared no expense or effort in protecting your investment and your privacy. Your physical gold is safeguarded by the leading security and storage company in Liechtenstein, Trisuna Lagerhaus AG / OZL AG, who securely stores diamonds, precious metals and art for the wealthiest families in the country.</p>
+                <h4>Insurance</h4>
+                <p>We take over the complete management of the physical gold. This also includes insurance against all possible adversities and circumstances, which is provided by the gold storage and handling experts Trisuna Lagerhaus / OZL . This means, your complete gold stock is 100% insured with an individual insurance certificate.</p>
+            </div>
+            <div class="col-md-5 col-xs-12">
+                <img src="img/securestorage.png">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="six-featured" style="padding: 60px 0; position: relative; overflow: hidden;">
+    <div class="wrapper container-fluid bg_gold" >
+        <div class="row">
+            <div class="col-md-4 col-xs-12" >
+
+                <div class="title">
+                    <h3> Get started in <span>4</span> steps</h3>
+                    <p class="slogan">Easiest way to invest in digital gold!</p>
+                </div>
+
+            </div>
+            <div class="col-md-7 col-xs-12  col-md-offset-1 col-xs-offset-0 ">
+                <div class="">
+                    <div class="content">
+                        <ul>
+                            <li><span>1</span> Submit your personal information</li>
+                            <li><span>2</span> Our account manager will contact you</li>
+                            <li><span>3</span> Buy your NNN with Euro or Cryptocurrency</li>
+                            <li><span>4</span> Store and trade your NNN or redeem your gold</li>
+                        </ul>
+                        <button>Invest in digital gold</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="seven-featured">
+    <div class="wrapper container-fluid" >
+        <h3>NOVEM GOLD WAS FEATURED IN</h3>
+        <div class="row center-xs">
+            <div class="col-xs">
+                <img src="img/logo/Forbes.png" alt="Forbes" width="143">
+            </div>
+            <div class="col-xs">
+                <img src="img/logo/businessinsider.png" alt="business insider"  width="95">
+            </div>
+            <div class="col-xs">
+                <img src="img/logo/yahoo.png" alt="yahoo"  width="116">
+            </div>
+            <div class="col-xs">
+                <img src="img/logo/e27.png" alt="e27"  width="80">
+            </div>
+            <div class="col-xs desktop-visible">
+                <img src="img/logo/thepick.png" alt="thepick" width="155">
+            </div>
+
+        </div>
+        <div class="row center-xs dist">
+            <div class="col-xs mobile-visible">
+                <img src="img/logo/thepick.png" alt="thepick" width="155">
+            </div>
+
+
+            <div class="col-xs">
+                <img src="img/logo/neonewstoday.png" alt="neonewstoday" width="182">
+            </div>
+            <div class="col-xs">
+                <img src="img/logo/newsbtc.png" alt="newsbtc"  width="170">
+            </div>
+            <div class="col-xs">
+                <img src="img/logo/techinvest.png" alt="techinvest"  width="175">
+            </div>
+            <div class="col-xs">
+                <img src="img/logo/irishtech.png" alt="e27"  width="185">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="eight-featured">
+    <div class="wrapper container-fluid">
+
+        <h3>Novem Gold <span>Newsletter</span></h3>
+        <form>
+
+            <label for="email">Enter your email below to receive the latest news:</label>
+            <div class="newsletter">
+                <input required="required" type="email" value="" name="email" id="customer_email">
+                <input type="submit" value="Send">
+            </div>
+            <div class="clearfix"></div>
+            <input type="checkbox" id="receiveemails" name="receiveemails" value="receiveemails">
+            <label for="receiveemails" class="inline">I consent to receive emails from Novem Gold AG</label>
+        </form>
+    </div>
+</section>
+</body>
+</html>
